@@ -56,12 +56,13 @@ a:hover {
 }
 
 .primary-btn {
-    background-color: #FF6F61; /* Coral Energético */
+    background-color: #EC774D; /* Coral Energético */
     color: #fff;
     border-color: #FF6F61;
 }
 
 .primary-btn:hover {
+    color: #fff;
     background-color: #E66356;
     border-color: #E66356;
 }
@@ -92,7 +93,7 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #fff;
+    background-color: #EC774D;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
@@ -122,8 +123,8 @@ header .container {
 }
 
 .main-nav .nav-list a {
-    color: #555;
-    font-weight: 600;
+    color: #2c3e50;
+    font-weight: bold;
     padding: 5px 0;
     position: relative;
 }
