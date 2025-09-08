@@ -11,9 +11,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f7f6;
     scroll-behavior: smooth;
+    color: #2B2D42; /* Texto Principal */
+    background-color: #F9F6F2; /* Bege Suave */
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
 /* Tipografia e Cores */
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
-    color: #2c3e50; /* Azul escuro */
+    color: #001F3F; /* Azul Marinho */
     margin-bottom: 15px;
 }
 
@@ -39,11 +39,11 @@ p {
 
 a {
     text-decoration: none;
-    color: #3498db; /* Azul */
+    color: #FF6F61; /* Coral Energético */
 }
 
 a:hover {
-    color: #2980b9; /* Azul mais escuro */
+    color: #E66356; 
 }
 
 .btn {
@@ -56,25 +56,25 @@ a:hover {
 }
 
 .primary-btn {
-    background-color: #3498db;
+    background-color: #FF6F61; /* Coral Energético */
     color: #fff;
-    border: 2px solid #3498db;
+    border-color: #FF6F61;
 }
 
 .primary-btn:hover {
-    background-color: #2980b9;
-    border-color: #2980b9;
+    background-color: #E66356;
+    border-color: #E66356;
 }
 
 .secondary-btn {
-    background-color: transparent;
-    color: #3498db;
     border: 2px solid #3498db;
+    color: #FF6F61;
+    border-color: #FF6F61;
 }
 
 .secondary-btn:hover {
-    background-color: #3498db;
     color: #fff;
+    background-color: #FF6F61;
 }
 
 .tertiary-btn {
@@ -188,7 +188,7 @@ header .container {
 }
 
 .hero-image {
-    flex: 0 0 350px; /* Tamanho fixo para a imagem */
+    flex: 0 0 300px; /* Tamanho fixo para a imagem */
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -227,7 +227,7 @@ section h3::after {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background-color: #3498db;
+    background-color: #FF6F61; /* Coral Energético */
     border-radius: 2px;
 }
 
@@ -278,7 +278,7 @@ section h3::after {
 
 .skill-item i {
     font-size: 2.5em;
-    color: #3498db;
+    color: #FF6F61; /* Coral Energético */
     margin-bottom: 15px;
 }
 
@@ -429,8 +429,8 @@ section h3::after {
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #001F3F; /* Azul Marinho */
+    color: #F9F6F2; /* Bege Suave como cor de texto no rodapé */
     text-align: center;
     padding: 30px 0;
     font-size: 0.9em;
