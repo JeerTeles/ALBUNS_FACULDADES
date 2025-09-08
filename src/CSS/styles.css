@@ -11,9 +11,13 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f7f6;
     scroll-behavior: smooth;
+    color: #2B2D42; /* Texto Principal */
+    background-color: #F9F6F2; /* Bege Suave */
+}
+
+.principal {
+    background-color: red;
 }
 
 .container {
@@ -25,7 +29,7 @@ body {
 /* Tipografia e Cores */
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
-    color: #2c3e50; /* Azul escuro */
+    color: #001F3F; /* Azul Marinho */
     margin-bottom: 15px;
 }
 
@@ -39,11 +43,11 @@ p {
 
 a {
     text-decoration: none;
-    color: #3498db; /* Azul */
+    color: #FF6F61; /* Coral Energético */
 }
 
 a:hover {
-    color: #2980b9; /* Azul mais escuro */
+    color: #E66356; 
 }
 
 .btn {
@@ -56,48 +60,49 @@ a:hover {
 }
 
 .primary-btn {
-    background-color: #3498db;
+    background-color: #EC774D; /* Coral Energético */
     color: #fff;
-    border: 2px solid #3498db;
+    border-color: #FF6F61;
 }
 
 .primary-btn:hover {
-    background-color: #2980b9;
-    border-color: #2980b9;
+    color: #fff;
+    background-color: #E66356;
+    border-color: #E66356;
 }
 
 .secondary-btn {
-    background-color: transparent;
-    color: #3498db;
     border: 2px solid #3498db;
+    color: #FF6F61;
+    border-color: #FF6F61;
 }
 
 .secondary-btn:hover {
-    background-color: #3498db;
     color: #fff;
+    background-color: #FF6F61;
 }
 
 .tertiary-btn {
     background-color: #ecf0f1;
     color: #2c3e50;
-    border: 1px solid #bdc3c7;
+    border: 1px solid #FF914D;
     font-size: 0.9em;
     padding: 8px 15px;
 }
 
 .tertiary-btn:hover {
-    background-color: #bdc3c7;
+    background-color: #e27836;
     color: #2c3e50;
 }
 
 /* Header */
 header {
-    background-color: #fff;
+    background-color: #FF914D;
     padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
 }
 
 header .container {
@@ -122,8 +127,8 @@ header .container {
 }
 
 .main-nav .nav-list a {
-    color: #555;
-    font-weight: 600;
+    color: #2c3e50;
+    font-weight: bold;
     padding: 5px 0;
     position: relative;
 }
@@ -155,9 +160,13 @@ header .container {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #ecf0f1, #bdc3c7);
     padding: 80px 0;
     text-align: center;
+    background-image: url('/src/img/Banner\ para\ YouTube\ -\ Explorando\ o\ Mundo\ de\ Mariana\ \(3\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
 }
 
 .hero .hero-content {
@@ -188,8 +197,8 @@ header .container {
 }
 
 .hero-image {
-    flex: 0 0 350px; /* Tamanho fixo para a imagem */
-    border-radius: 50%;
+    flex: 0 0 300px; /* Tamanho fixo para a imagem */
+    border-radius: 5%;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
@@ -227,14 +236,14 @@ section h3::after {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background-color: #3498db;
+    background-color: #FF6F61; /* Coral Energético */
     border-radius: 2px;
 }
 
 /* About Me Section */
 .about-me {
-    background-color: #fff;
     text-align: center;
+    background-color: #FF914D;
 }
 
 .about-me p {
@@ -273,12 +282,12 @@ section h3::after {
 
 .skill-item:hover {
     transform: translateY(-5px);
-    background-color: #dde1e2;
+    background-color: #FF914D;
 }
 
 .skill-item i {
     font-size: 2.5em;
-    color: #3498db;
+    color: #FF6F61; /* Coral Energético */
     margin-bottom: 15px;
 }
 
@@ -303,7 +312,7 @@ section h3::after {
 
 /* Portfolio Section */
 .portfolio {
-    background-color: #f4f7f6;
+    background-color: #FF914D;
 }
 
 .portfolio-grid {
@@ -324,6 +333,7 @@ section h3::after {
 .portfolio-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    background-color: #FE9553;
 }
 
 .portfolio-item img {
@@ -341,7 +351,8 @@ section h3::after {
 
 .portfolio-item p {
     font-size: 0.95em;
-    color: #666;
+    color: #2c3e50;
+    font-weight: 500;
     padding: 0 15px 20px 15px;
     line-height: 1.5;
 }
@@ -352,7 +363,7 @@ section h3::after {
 
 /* Contact Section */
 .contact {
-    background-color: #fff;
+    background-color: #FF914D;
     text-align: center;
 }
 
@@ -429,8 +440,8 @@ section h3::after {
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #FF914D; /* Azul Marinho */
+    color: #F9F6F2; /* Bege Suave como cor de texto no rodapé */
     text-align: center;
     padding: 30px 0;
     font-size: 0.9em;
