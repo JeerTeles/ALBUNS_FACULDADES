@@ -16,6 +16,10 @@ body {
     background-color: #F9F6F2; /* Bege Suave */
 }
 
+.principal {
+    background-color: red;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -81,24 +85,24 @@ a:hover {
 .tertiary-btn {
     background-color: #ecf0f1;
     color: #2c3e50;
-    border: 1px solid #bdc3c7;
+    border: 1px solid #FF914D;
     font-size: 0.9em;
     padding: 8px 15px;
 }
 
 .tertiary-btn:hover {
-    background-color: #bdc3c7;
+    background-color: #e27836;
     color: #2c3e50;
 }
 
 /* Header */
 header {
-    background-color: #EC774D;
+    background-color: #FF914D;
     padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
 }
 
 header .container {
@@ -156,9 +160,13 @@ header .container {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #ecf0f1, #bdc3c7);
     padding: 80px 0;
     text-align: center;
+    background-image: url('/src/img/Banner\ para\ YouTube\ -\ Explorando\ o\ Mundo\ de\ Mariana\ \(4\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
 }
 
 .hero .hero-content {
@@ -190,7 +198,7 @@ header .container {
 
 .hero-image {
     flex: 0 0 300px; /* Tamanho fixo para a imagem */
-    border-radius: 50%;
+    border-radius: 5%;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
@@ -234,8 +242,8 @@ section h3::after {
 
 /* About Me Section */
 .about-me {
-    background-color: #fff;
     text-align: center;
+    background-color: #FF914D;
 }
 
 .about-me p {
@@ -274,7 +282,7 @@ section h3::after {
 
 .skill-item:hover {
     transform: translateY(-5px);
-    background-color: #dde1e2;
+    background-color: #FF914D;
 }
 
 .skill-item i {
@@ -304,7 +312,7 @@ section h3::after {
 
 /* Portfolio Section */
 .portfolio {
-    background-color: #f4f7f6;
+    background-color: #FF914D;
 }
 
 .portfolio-grid {
@@ -325,6 +333,7 @@ section h3::after {
 .portfolio-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    background-color: #FE9553;
 }
 
 .portfolio-item img {
@@ -342,7 +351,8 @@ section h3::after {
 
 .portfolio-item p {
     font-size: 0.95em;
-    color: #666;
+    color: #2c3e50;
+    font-weight: 500;
     padding: 0 15px 20px 15px;
     line-height: 1.5;
 }
@@ -353,7 +363,7 @@ section h3::after {
 
 /* Contact Section */
 .contact {
-    background-color: #fff;
+    background-color: #FF914D;
     text-align: center;
 }
 
@@ -430,7 +440,7 @@ section h3::after {
 
 /* Footer */
 footer {
-    background-color: #001F3F; /* Azul Marinho */
+    background-color: #FF914D; /* Azul Marinho */
     color: #F9F6F2; /* Bege Suave como cor de texto no rodapé */
     text-align: center;
     padding: 30px 0;
