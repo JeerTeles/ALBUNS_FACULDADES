@@ -1,0 +1,525 @@
+/* Importação de Fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400&display=swap');
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Tipografia e Cores */
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50; /* Azul escuro */
+    margin-bottom: 15px;
+}
+
+h2 { font-size: 2.5em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1.5em; }
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db; /* Azul */
+}
+
+a:hover {
+    color: #2980b9; /* Azul mais escuro */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.primary-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: 2px solid #3498db;
+}
+
+.primary-btn:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.secondary-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.tertiary-btn {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border: 1px solid #bdc3c7;
+    font-size: 0.9em;
+    padding: 8px 15px;
+}
+
+.tertiary-btn:hover {
+    background-color: #bdc3c7;
+    color: #2c3e50;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.main-nav .nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav .nav-list li {
+    margin-left: 30px;
+}
+
+.main-nav .nav-list a {
+    color: #555;
+    font-weight: 600;
+    padding: 5px 0;
+    position: relative;
+}
+
+.main-nav .nav-list a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+.main-nav .nav-list a:hover::after,
+.main-nav .nav-list a.active::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none; /* Esconde o botão em telas maiores */
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #ecf0f1, #bdc3c7);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero .hero-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar em telas menores */
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 0 0 350px; /* Tamanho fixo para a imagem */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Seções Gerais */
+section {
+    padding: 80px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+section h3::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #3498db;
+    border-radius: 2px;
+}
+
+/* About Me Section */
+.about-me {
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-me p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.skills {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.skills h4 {
+    margin-bottom: 30px;
+    color: #34495e;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    background-color: #ecf0f1;
+    padding: 25px 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    background-color: #dde1e2;
+}
+
+.skill-item i {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.skill-item span {
+    display: block;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.resume-download {
+    margin-top: 50px;
+}
+
+.resume-download .btn {
+    padding: 15px 30px;
+    font-size: 1.1em;
+}
+
+.resume-download .btn i {
+    margin-right: 10px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: #f4f7f6;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-item h4 {
+    margin: 20px 15px 10px 15px;
+    color: #2c3e50;
+    font-size: 1.3em;
+}
+
+.portfolio-item p {
+    font-size: 0.95em;
+    color: #666;
+    padding: 0 15px 20px 15px;
+    line-height: 1.5;
+}
+
+.portfolio-item .btn {
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact p {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.contact-form button[type="submit"] {
+    width: auto;
+    display: block; /* Para centralizar se necessário */
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.social-links {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-links a {
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .hero .hero-content {
+        flex-direction: column-reverse; /* Imagem em cima do texto em mobile */
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 2.2em;
+    }
+
+    .hero-image {
+        margin-bottom: 40px;
+        flex: none; /* Remove o flex-basis */
+        width: 250px;
+        height: 250px;
+    }
+
+    .main-nav .nav-list {
+        flex-direction: column;
+        display: none; /* Esconde o menu por padrão */
+        position: absolute;
+        top: 80px; /* Ajuste para ficar abaixo do header */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        border-top: 1px solid #eee;
+    }
+
+    .main-nav .nav-list.active {
+        display: flex; /* Mostra o menu quando ativo */
+    }
+
+    .main-nav .nav-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o botão em telas menores */
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    section h3 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 { font-size: 1.8em; }
+    h3 { font-size: 1.6em; }
+    h4 { font-size: 1.3em; }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero-text h2 {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas muito pequenas */
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item img {
+        height: 180px;
+    }
+}
