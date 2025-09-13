@@ -16,9 +16,9 @@ body {
     background-color: #F9F6F2; /* Bege Suave */
 }
 
-.principal {
+/*.principal {
     background-color: red;
-}
+}*/
 
 .container {
     max-width: 1200px;
@@ -97,7 +97,7 @@ a:hover {
 
 /* Header */
 header {
-    background-color: #FF914D;
+    background-color: /*#FF914D*/ #c35e1f;
     padding: 20px 0;
     /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
     position: sticky;
@@ -312,7 +312,7 @@ section h3::after {
 
 /* Portfolio Section */
 .portfolio {
-    background-color: #FF914D;
+    background-color: #c35e1f;
 }
 
 .portfolio-grid {
@@ -438,10 +438,9 @@ section h3::after {
     transform: translateY(-5px);
 }
 
-/* Footer */
 footer {
-    background-color: #FF914D; /* Azul Marinho */
-    color: #F9F6F2; /* Bege Suave como cor de texto no rodapé */
+    background-color: #FF914D; 
+    color: #F9F6F2; 
     text-align: center;
     padding: 30px 0;
     font-size: 0.9em;
